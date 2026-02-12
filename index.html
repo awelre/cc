@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNI | Brazilian Funk Singer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="muni.jpg">
+    
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-blue: #00ffff;
+            --bg: #050505;
+            --card-bg: rgba(20, 20, 20, 0.9);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: #fff;
+            font-family: 'Dela Gothic One', cursive;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255, 0, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #1a001a 0%, #050505 100%);
+            border-bottom: 4px solid var(--neon-pink);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid var(--neon-blue);
+            box-shadow: 0 0 30px var(--neon-blue);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            color: #fff;
+            text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink);
+        }
+
+        .genre {
+            font-size: 1.5rem;
+            color: var(--neon-blue);
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--neon-blue);
+            display: inline-block;
+            width: 100%;
+        }
+
+        .track-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .track-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+
+        .track-card:hover {
+            border-color: var(--neon-pink);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+        }
+
+        .play-btn {
+            background: var(--neon-pink);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .contact-box {
+            text-align: center;
+            background: rgba(0, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px dashed var(--neon-blue);
+            margin-top: 60px;
+        }
+
+        .email-link {
+            color: var(--neon-pink);
+            font-size: 1.2rem;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            opacity: 0.5;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="muni.jpg" alt="MUNI" class="profile-img">
+    <h1>MUNI</h1>
+    <div class="genre">BRAZILIAN FUNK ARTIST</div>
+</header>
+
+<div class="container">
+    <div class="section-title">TOP TRACKS</div>
+    
+    <div class="track-list">
+        <div class="track-card">
+            <div>
+                <div style="font-size: 1.2rem;">MONTAGEM UNTA NELA</div>
+                <div style="color: #666; font-size: 0.8rem;">Single</div>
+            </div>
+            <a href="#" class="play-btn">LISTEN</a>
+        </div>
+
+        <div class="track-card">
+            <div>
+                <div style="font-size: 1.2rem;">STAR FUNK V2</div>
+                <div style="color: #666; font-size: 0.8rem;">Single</div>
+            </div>
+            <a href="#" class="play-btn">LISTEN</a>
+        </div>
+    </div>
+
+    <div class="contact-box">
+        <div style="margin-bottom: 15px;">BOOKING & CONTACT:</div>
+        <a href="mailto:htmguidee@proton.me" class="email-link">htmguidee@proton.me</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 MUNI MUSIC. All rights reserved.
+</footer>
+
+</body>
+</html>
